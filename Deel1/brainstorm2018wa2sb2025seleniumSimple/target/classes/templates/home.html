@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr-nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Security Dashboard — LegalFly</title>
+  <!-- Respect existing project paths (Spring Boot serves /static/** under /) -->
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/css/bootstrap.min.css}" />
+  <link href="../static/css/core.css" rel="stylesheet" media="screen" th:href="@{/css/core.css}" />
+  <style>
+    /* Extra styles specific to the dashboard; safe to inline */
+    .page-title { margin: 10px 0 20px; }
+    .dashboard-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 20px; }
+    .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+    .card-header { padding: 14px 16px; border-bottom: 1px solid #eee; font-weight: 600; }
+    .card-body { padding: 16px; }
+    .table thead th { background: #f8f9fa; }
+    .pill { padding: 2px 8px; border-radius: 999px; font-size: 12px; border: 1px solid #ddd; }
+    .pill-original { background: #fffbe6; }
+    .pill-mocked { background: #e6fff2; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .mock-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+    .mock-grid label { font-weight: 500; }
+    textarea.document-preview { width: 100%; min-height: 220px; resize: vertical; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .muted { color: #666; }
+    .sticky-actions { position: sticky; bottom: 0; background: #fff; padding-top: 8px; }
+    @media (max-width: 992px) { .dashboard-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <!-- Use existing navbar/header fragment -->
+  <div th:replace="fragments/header :: header">Header</div>
+
+  <div class="container">
+    <h1 class="page-title">Dashboard sécurité / Security dashboard</h1>
+
+    <div class="dashboard-grid">
+      <!-- LEFT: Documents to anonymize + preview -->
+      <section class="card" aria-labelledby="docListHeading">
+        <div class="card-header" id="docListHeading">Documents à anonymiser / Te anonimiseren documenten</div>
+        <div class="card-body">
+          <p class="muted" th:if="${#lists.isEmpty(documents)}">Aucun document en attente. / Geen documenten in wachtrij.</p>
+
+          <div th:if="${!#lists.isEmpty(documents)}">
+            <div class="table-responsive">
+              <table class="table table-hover" id="documentsTable" data-testid="documents-table">
+                <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Titre / Titel</th>
+                  <th>Statut / Status</th>
+                  <th class="text-end">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="doc,iter : ${documents}"
+                    th:classappend="${selectedDocument != null and selectedDocument.id == doc.id} ? 'table-active'">
+
+                  <td th:text="${iter.index + 1}">1</td>
+                  <td>
+                    <a href="#" th:text="${doc.content}" th:onclick="|selectDocument(${doc.id}); return false;|" data-testid="doc-title-link">Contract content...</a>
+                  </td>
+                  <td>
+                    <span class="pill" th:text="${doc.status}">pending</span>
+                  </td>
+                  <td class="text-end">
+                    <button class="btn btn-sm btn-outline-primary" th:onclick="|selectDocument(${doc.id});|" type="button" data-testid="select-doc-btn">Sélectionner / Selecteer</button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <hr/>
+
+            <h4>Prévisualisation / Voorbeeld</h4>
+            <textarea class="document-preview" id="documentPreview" readonly
+                      placeholder="Prévisualisation du document… / Documentvoorbeeld…"
+                      th:text="${selectedDocument != null} ? ${selectedDocument.content} : ''"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT: Client info + field selection + mock generation -->
+      <aside class="card" aria-labelledby="clientInfoHeading">
+        <div class="card-header" id="clientInfoHeading">Infos client / Klantinformatie</div>
+        <div class="card-body">
+          <div th:if="${client != null}" id="clientPanel">
+            <p><strong>Nom / Naam:</strong> <span th:text="${client.firstName} + ' ' + ${client.lastName}">Lisa De Vries</span></p>
+            <p><strong>E‑mail:</strong> <span th:text="${client.email}">lisa@example.com</span></p>
+          </div>
+          <p class="muted" th:if="${client == null}">Sélectionnez d’abord un document lié à un client. / Selecteer eerst een document.</p>
+
+          <hr/>
+
+          <form method="post" th:action="@{/dashboard/mock}" id="mockForm">
+            <div class="mock-grid">
+              <div>
+                <input class="form-check-input" type="checkbox" id="field-name" name="fields" value="name" checked />
+                <label class="form-check-label" for="field-name">Nom / Naam</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="field-address" name="fields" value="address" />
+                <label class="form-check-label" for="field-address">Adresse / Adres</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="field-email" name="fields" value="email" checked />
+                <label class="form-check-label" for="field-email">E‑mail</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" id="field-phone" name="fields" value="phone" />
+                <label class="form-check-label" for="field-phone">Téléphone / Telefoon</label>
+              </div>
+            </div>
+
+            <div class="actions mt-3">
+              <input type="hidden" name="documentId" th:value="${selectedDocument?.id}" />
+              <button class="btn btn-primary" id="generate-mock-btn" name="generateMock" type="submit" formaction="#" th:formaction="@{/dashboard/mock}">Générer des données mock / Genereer mock data</button>
+              <button class="btn btn-success" id="replace-btn" name="applyMock" type="submit" formaction="#" th:formaction="@{/dashboard/replace}" disabled="disabled" th:disabled="${mock == null}">Remplacer dans le document / Vervang in document</button>
+            </div>
+
+            <div class="sticky-actions" th:if="${mock != null}">
+              <hr/>
+              <h5>Valeurs générées / Gegenereerde waarden</h5>
+              <div class="table-responsive">
+                <table class="table table-sm" id="mockResults" data-testid="mock-results">
+                  <thead>
+                  <tr>
+                    <th>Veld</th>
+                    <th>Originele waarde</th>
+                    <th>Mock waarde</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <!-- Expect a Map<String, Pair<String,String>> or list of triplets in the model -->
+                  <tr th:each="row : ${mock}">
+                    <td th:text="${row.field}">Naam</td>
+                    <td th:text="${row.original}">Imran Rossi</td>
+                    <td th:text="${row.value}">Emma Janssens</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Tiny helper so Selenium can click and update selection without extra JS deps
+    function selectDocument(id) {
+      const url = new URL(window.location, window.location.origin);
+      url.searchParams.set('id', id);
+      window.location.href = url.toString();
+    }
+  </script>
+
+  <div th:replace="fragments/footer :: footer">&copy; Footer</div>
+</body>
+</html>
