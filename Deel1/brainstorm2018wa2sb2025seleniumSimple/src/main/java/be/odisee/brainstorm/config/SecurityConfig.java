@@ -43,7 +43,7 @@ public class SecurityConfig {
 
         http
                 .authorizeHttpRequests(a -> a
-                        .requestMatchers("/login","/login/**", "/default-ui.css", "/favicon.ico", "/css/**", "/js/**", "/images/**").permitAll()
+                        .requestMatchers("/login","/login/**", "/default-ui.css", "/favicon.ico", "/css/**", "/js/**", "/images/**", "/ask",  "/api/ask", "/**/ask").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         .anyRequest().authenticated()
                 )
@@ -58,7 +58,7 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf
                         //.ignoringRequestMatchers("/oauth2/**", "/h2-console/**",  "/logout")
                         // /login werd toegevoegd, niet omdat het nodig is voor front-to-back auth, maar om backend auth te kunnen demonstreren
-                        .ignoringRequestMatchers("/oauth2/**", "/h2-console/**", "/api/mock/**", "/logout", "/login")
+                        .ignoringRequestMatchers("/oauth2/**", "/h2-console/**", "/api/mock/**", "/logout", "/login", "/ask",  "/api/ask", "/**/ask")
                 )
                 .headers(h -> h.frameOptions(f -> f.sameOrigin()))
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3307/legalfly?serverTimezone=UTC
+    url: jdbc:mysql://localhost/legalfly?serverTimezone=UTC
     username: "legalflyuser"
     password: "legalflyuserpw"
   jpa:
