@@ -13,32 +13,10 @@ import java.util.Map;
 public class DocumentAnonymizeService {
 
     private final DocumentRepository documentRepository;
-    private final AiService aiService; // Add this field
 
     // Update constructor to include AiService
     public DocumentAnonymizeService(DocumentRepository documentRepository, AiService aiService) {
         this.documentRepository = documentRepository;
-        this.aiService = aiService;
-    }
-
-    /** * NEW: Smart Anonymization using AI
-     * 1. Fetches the document
-     * 2. Asks AI to find sensitive names
-     * 3. Replaces them using the existing logic
-     */
-    @Transactional
-    public Document smartAnonymize(int documentId) {
-        // 1. Get the document
-        Document doc = documentRepository.findById(documentId)
-                .orElseThrow(() -> new IllegalArgumentException("Document niet gevonden: " + documentId));
-
-        String textToAnalyze = doc.getText() == null ? "" : doc.getText();
-
-        // 2. Ask AI for suggestions
-        Map<String, String> aiSuggestions = aiService.suggestAnonymization(textToAnalyze);
-
-        // 3. Apply the replacements
-        return replaceInDocument(documentId, aiSuggestions);
     }
 
     /** Vervangt strings in de documenttekst en markeert als MOCKED (persistente update). */

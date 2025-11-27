@@ -26,23 +26,5 @@ public class AiServiceImpl implements AiService {
         return new Answer(answerText);
     }
 
-    @Override
-    public Map<String, String> suggestAnonymization(String text) {
-        // We ask the AI to extract names and return them as a JSON Map
-        return chatClient.prompt()
-                .user(u -> u.text("""
-                        Analyze the following legal text. Identify all names of natural persons (people).
-                        Return a JSON map where:
-                        - The Key is the full name found in the text.
-                        - The Value is the string "ANONYMIZED_NAME".
-                        
-                        If no names are found, return an empty map.
-                        
-                        Text to analyze:
-                        {input_text}
-                        """)
-                        .param("input_text", text))
-                .call()
-                .entity(new ParameterizedTypeReference<Map<String, String>>() {});
-    }
+
 }

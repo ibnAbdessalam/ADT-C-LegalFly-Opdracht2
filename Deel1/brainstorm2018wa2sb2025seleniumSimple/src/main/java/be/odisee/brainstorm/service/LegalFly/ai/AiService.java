@@ -7,9 +7,5 @@ import java.util.Map;
 public interface AiService {
     Answer askQuestion(Question question);
 
-    /**
-     * Uses AI to analyze text and return a map of sensitive words to anonymize.
-     * Key = Original Name, Value = Replacement (e.g., "ANONYMIZED")
-     */
-    Map<String, String> suggestAnonymization(String text);
+
 }
