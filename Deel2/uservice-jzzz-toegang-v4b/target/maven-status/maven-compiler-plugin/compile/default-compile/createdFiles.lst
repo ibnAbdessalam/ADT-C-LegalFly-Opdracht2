@@ -1,0 +1,9 @@
+be\odisee\jzzz\domain\Answer.class
+be\odisee\jzzz\JzzzToegangApplication.class
+be\odisee\jzzz\service\aiService.class
+be\odisee\jzzz\domain\Question.class
+be\odisee\jzzz\domain\Evenement.class
+be\odisee\jzzz\domain\Toegang.class
+be\odisee\jzzz\dao\ToegangRepository.class
+be\odisee\jzzz\dao\EvenementRepository.class
+be\odisee\jzzz\RepositoryConfig.class

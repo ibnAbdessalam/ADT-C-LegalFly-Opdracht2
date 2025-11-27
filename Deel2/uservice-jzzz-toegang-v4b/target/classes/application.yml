@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost/jzzz
-    username: legalflyuser_opdracht2
-    password: legalflypassword
+    username: jzzzuser
+    password: jzzzuserpw
   jpa:
     hibernate:
       ddl-auto: create
@@ -10,4 +10,4 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
 server:
-  port: 9081
+  port: 9082
