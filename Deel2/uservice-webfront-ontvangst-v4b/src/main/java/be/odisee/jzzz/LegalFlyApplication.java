@@ -4,9 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JzzzWebfrontOntvangstApplication {
-
+public class LegalFlyApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(JzzzWebfrontOntvangstApplication.class, args);
+		SpringApplication.run(LegalFlyApplication.class, args);
 	}
 }
