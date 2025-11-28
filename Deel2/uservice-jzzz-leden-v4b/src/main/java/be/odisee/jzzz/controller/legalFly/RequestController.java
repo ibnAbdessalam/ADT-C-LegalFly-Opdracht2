@@ -15,7 +15,7 @@ public class RequestController {
 
     private final RequestService requestService;
 
-    public RequestRestController(RequestService requestService) {
+    public RequestController(RequestService requestService) {
         this.requestService = requestService;
     }
 
