@@ -1,0 +1,8 @@
+étapes pour lancer l'application
+
+1. allumer Apache/MySQL
+2. créer la db et le user correspondant a ce qu'il y'a dans le application propreties
+3. lancer les deux back (jazz leden et jazz toegang)
+4. Dans le front, mettre "npm install" dans le command line 
+5. ensuite "npm run serve" pour lancer le front 
+6. aller sur l'adresse du front 
