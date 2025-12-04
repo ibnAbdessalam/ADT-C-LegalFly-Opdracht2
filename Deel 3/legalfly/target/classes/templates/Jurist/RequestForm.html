@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Aanmaken</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h2 class="mb-4 text-primary">Nieuw Request Aanmaken</h2>
+    <form action="/jurist/requests" method="post" class="card p-4 shadow">
+        <input type="hidden" name="juristId" th:value="${juristId}" />
+
+        <div class="mb-3">
+            <label for="law" class="form-label">Selecteer Wet</label>
+            <select name="lawId" id="law" class="form-select">
+                <option th:each="law : ${laws}" th:value="${law.id}" th:text="${law.name}"></option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="content" class="form-label">Inhoud</label>
+            <textarea name="content" id="content" rows="6" class="form-control"></textarea>
+        </div>
+
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">Verstuur Request</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

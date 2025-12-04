@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rapport Toevoegen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+  <h2 class="mb-4">Rapport opstellen voor Request</h2>
+
+  <!-- Request info -->
+  <div class="mb-4 p-3 bg-white shadow-sm rounded">
+    <p><strong>Request ID:</strong> <span th:text="${request.id}"></span></p>
+    <p><strong>Inhoud:</strong> <span th:text="${request.content}"></span></p>
+    <p><strong>Jurist:</strong> <span th:text="${request.jurist.firstName + ' ' + request.jurist.lastName}"></span></p>
+  </div>
+
+  <form id="reportForm" method="post" th:action="@{/admin/reports/save}" class="bg-white p-4 shadow-sm rounded">
+    <input type="hidden" name="requestId" th:value="${request.id}" />
+    <input type="hidden" name="adminId" th:value="${adminId}" />
+
+    <!-- debug field (optioneel) -->
+    <input type="text" id="debug" class="form-control mb-3" readonly style="font-size: 0.8rem; color: #888;" />
+
+    <div class="mb-3">
+      <label for="type" class="form-label">Type Rapport:</label>
+      <select name="reportType" id="type" class="form-select" required>
+        <option value="">Selecteer type</option>
+        <option value="compliance">Compliance Check</option>
+        <option value="legal">Juridische Beoordeling</option>
+        <option value="risk">Risicobeoordeling</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="content" class="form-label">Inhoud Rapport:</label>
+      <textarea name="reportContent" id="content" class="form-control" rows="4" required></textarea>
+    </div>
+
+    <h4 class="mt-4">Overtreding Toevoegen</h4>
+    <div id="infraction-form" class="border rounded p-3 mb-3">
+      <div class="mb-2">
+        <label class="form-label">Wet:</label>
+        <select id="lawId" class="form-select">
+          <option value="">Selecteer wet</option>
+          <option th:each="law : ${laws}" th:value="${law.id}" th:text="${law.name}"></option>
+        </select>
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label">Type Overtreding:</label>
+        <input type="text" id="infractionType" class="form-control" placeholder="bv. Documentatiefout" />
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label">Details:</label>
+        <input type="text" id="infractionDetails" class="form-control" placeholder="Specifieke beschrijving" />
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label">Corrigerende Maatregel (optioneel):</label>
+        <input type="text" id="correctiveMeasure" class="form-control" placeholder="bv. Interne audit uitvoeren" />
+      </div>
+
+      <button type="button" class="btn btn-outline-primary mt-2" onclick="addInfraction()">Overtreding Toevoegen</button>
+    </div>
+
+    <div class="mb-3">
+      <h5>Toegevoegde Overtredingen:</h5>
+      <div id="infraction-list" class="bg-light p-3 rounded border">
+        <p>Geen overtredingen toegevoegd</p>
+      </div>
+    </div>
+
+    <input type="hidden" name="infractionsJson" id="infractionsJson" />
+    <button type="submit" class="btn btn-success" onclick="updateHiddenInput()">Sla Rapport op</button>
+  </form>
+</div>
+
+<script>
+  const infractions = [];
+
+  function addInfraction() {
+    const lawSelect = document.getElementById("lawId");
+    const lawId = lawSelect.value;
+    const infractionType = document.getElementById("infractionType").value.trim();
+    const infractionDetails = document.getElementById("infractionDetails").value.trim();
+    const correctiveMeasure = document.getElementById("correctiveMeasure").value.trim();
+
+    if (!lawId || !infractionType || !infractionDetails) {
+      alert("Gelieve alle verplichte velden in te vullen.");
+      return;
+    }
+
+    const infraction = {
+      lawId: parseInt(lawId),
+      type: infractionType,
+      details: infractionDetails,
+      correctiveMeasure
+    };
+
+    infractions.push(infraction);
+    updateInfractionList();
+    clearInfractionFields();
+    updateHiddenInput(); // ook bij toevoegen
+  }
+
+  function updateInfractionList() {
+    const list = document.getElementById("infraction-list");
+    list.innerHTML = "";
+
+    if (infractions.length === 0) {
+      list.innerHTML = "<p>Geen overtredingen toegevoegd</p>";
+      return;
+    }
+
+    infractions.forEach((inf, index) => {
+      const div = document.createElement("div");
+      div.classList.add("border-bottom", "pb-2", "mb-2");
+
+      div.innerHTML = `
+        <strong>Wet ID:</strong> ${inf.lawId}<br>
+        <strong>Type:</strong> ${inf.type}<br>
+        <strong>Details:</strong> ${inf.details}<br>
+        <strong>Corrigerende maatregel:</strong> ${inf.correctiveMeasure || '—'}<br>
+        <button type="button" class="btn btn-sm btn-outline-danger mt-1" onclick="removeInfraction(${index})">Verwijderen</button>
+      `;
+
+      list.appendChild(div);
+    });
+  }
+
+  function clearInfractionFields() {
+    document.getElementById("infractionType").value = "";
+    document.getElementById("infractionDetails").value = "";
+    document.getElementById("correctiveMeasure").value = "";
+    document.getElementById("lawId").selectedIndex = 0;
+  }
+
+  function removeInfraction(index) {
+    infractions.splice(index, 1);
+    updateInfractionList();
+    updateHiddenInput();
+  }
+
+  function updateHiddenInput() {
+    const json = JSON.stringify(infractions);
+    document.getElementById("infractionsJson").value = json;
+    const debug = document.getElementById("debug");
+    if (debug) debug.value = json; // debug zichtbaar
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

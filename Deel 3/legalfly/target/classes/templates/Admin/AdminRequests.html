@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - LegalFly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h2 class="text-primary mb-4">Overzicht van Alle Requests</h2>
+
+    <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Inhoud</th>
+            <th>Jurist</th>
+            <th>Status</th>
+            <th>Actie</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="request : ${requests}">
+            <td th:text="${request.id}"></td>
+            <td th:text="${request.content}"></td>
+            <td th:text="${request.jurist.firstName + ' ' + request.jurist.lastName}"></td>
+            <td>
+                <span class="badge bg-secondary" th:text="${request.status}"></span>
+            </td>
+            <td>
+                <a th:href="@{/admin/reports/create(requestId=${request.id}, adminId=${adminId})}" class="btn btn-sm btn-outline-primary">
+                    Voeg Rapport Toe
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container py-5">
+    <h2 class="text-primary mb-4">Overzicht van Alle Reports</h2>
+
+    <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Content</th>
+            <th>Request Id</th>
+            <th>Admin Id</th>
+            <th>Update</th>
+            <th>Create</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="report : ${reports}">
+            <td th:text="${report.id}"></td>
+            <td th:text="${report.type}"></td>
+            <td th:text="${report.content}"></td>
+            <td th:text="${report.request.id}"></td>
+            <td th:text="${report.admin.id}"></td>
+            <td>
+                <a th:href="@{/admin/reports/update(reportId=${report.id}, adminId=${adminId})}" class="btn btn-sm btn-outline-primary">
+                    Update Report
+                </a>
+            </td>
+            <td>
+                <a th:href="@{/admin/reports/create(requestId=${report.request.id}, adminId=${adminId})}" class="btn btn-sm btn-outline-primary">
+                    Voeg Rapport Toe
+                </a>
+            </td>
+            <td>
+                <a th:href="@{/admin/reports/delete(reportId=${report.id}, adminId=${adminId})}" class="btn btn-sm btn-outline-primary">
+                    Delete Rapport
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

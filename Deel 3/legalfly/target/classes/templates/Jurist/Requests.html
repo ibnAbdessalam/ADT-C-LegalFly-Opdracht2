@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mijn Requests</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <h2 class="mb-4 text-primary">Mijn Requests</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Inhoud</th>
+            <th>Wet</th>
+            <th>Status</th>
+            <th>Aangemaakt op</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="request : ${requests}">
+            <td th:text="${request.id}"></td>
+            <td th:text="${request.content}"></td>
+            <td th:text="${request.law != null ? request.law.name : '—'}"></td>
+            <td th:text="${request.status}"></td>
+            <td th:text="${request.createdAt}"></td>
+            <td>
+                <a th:href="@{/jurist/requests/delete(requestId=${request.id}, juristId=${juristId})}" class="btn btn-sm btn-outline-primary">
+                    Delete Request
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="text-end">
+        <a th:href="@{/jurist/requests/new(juristId=${juristId})}" class="btn btn-success">Request Aanmaken</a>
+    </div>
+</div>
+</body>
+</html>
