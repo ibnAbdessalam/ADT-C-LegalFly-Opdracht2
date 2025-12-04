@@ -1,0 +1,7 @@
+be\odisee\jzzz\JzzzLedenApplication.class
+be\odisee\jzzz\service\legalFly\RequestServiceImpl.class
+be\odisee\jzzz\controller\legalFly\RequestController.class
+be\odisee\jzzz\service\legalFly\RequestService.class
+be\odisee\jzzz\RepositoryConfig.class
+be\odisee\jzzz\domain\legalFly\Request.class
+be\odisee\jzzz\dao\legalFly\RequestRepository.class
