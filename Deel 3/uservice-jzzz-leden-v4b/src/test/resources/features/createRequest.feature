@@ -11,4 +11,3 @@ Feature: New request
     And  Enters the create button
 
     Then The request is shown in the list of requests
-    And The request is shown in the list of requests

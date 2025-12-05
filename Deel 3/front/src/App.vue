@@ -11,6 +11,7 @@
         AI Service (Port 9082)
       </button>
       <button
+          name="RequestTab"
           class="tab"
           :class="{ active: activeTab === 'requests' }"
           @click="activeTab = 'requests'"

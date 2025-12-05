@@ -5,17 +5,17 @@
       <h2>➕ Créer une Demande</h2>
       <div class="form-group">
         <label>Titre:</label>
-        <input v-model="newRequest.title" placeholder="Titre de la demande" />
+        <input name="titel" v-model="newRequest.title" placeholder="Titre de la demande" />
       </div>
       <div class="form-group">
         <label>Description:</label>
-        <textarea v-model="newRequest.description" placeholder="Description détaillée..."></textarea>
+        <textarea name="beschrijving" v-model="newRequest.description" placeholder="Description détaillée..."></textarea>
       </div>
       <div class="form-group">
         <label>Email client:</label>
-        <input v-model="newRequest.clientEmail" type="email" placeholder="client@example.com" />
+        <input name="emailKlant" v-model="newRequest.clientEmail" type="email" placeholder="client@example.com" />
       </div>
-      <button @click="createRequest" :disabled="loading">
+      <button name="createRequest" @click="createRequest" :disabled="loading">
         {{ loading ? 'Création...' : 'Créer' }}
       </button>
     </div>

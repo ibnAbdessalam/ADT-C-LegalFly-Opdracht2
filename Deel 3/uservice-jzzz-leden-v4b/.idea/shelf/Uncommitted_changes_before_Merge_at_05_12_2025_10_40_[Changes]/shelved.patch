@@ -1,0 +1,137 @@
+Index: src/test/java/be/odisee/jzzz/MyStepdefsUI.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package be.odisee.jzzz;\r\n\r\nimport io.cucumber.java.Before;\r\nimport io.cucumber.java.en.And;\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\nimport io.cucumber.java.en.When;\r\nimport org.junit.After;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.chrome.ChromeDriver;\r\n\r\n\r\npublic class MyStepdefsUI {\r\n    WebDriver driver;\r\n    // informatie voor the when\r\n    String titel = \"test\";\r\n    String beschrijving = \"beschrijving om te testen\";\r\n    String emailKlant = \"test.email@gmail.com\";\r\n\r\n    //\r\n    @Before(\"@UI\")\r\n    public void before() {\r\n    driver = new ChromeDriver();\r\n\r\n    }\r\n\r\n    @After\r\n    public void tearDown() {\r\n        driver.close();\r\n    }\r\n\r\n    @Given(\"^User is on the Request page$\")\r\n    public void userIsOnTheRequestPage() {\r\n        driver.navigate().to(\"http://localhost:8080\");\r\n        driver.findElement(By.name(\"RequestTab\")).click();\r\n    }\r\n\r\n    @When(\"The user enters a title for the request\")\r\n    public void theUserEntersATitleForTheRequest() {\r\n        driver.findElement(By.name(\"titel\")).sendKeys(titel);\r\n    }\r\n\r\n    @And(\"The user enters a description for the request\")\r\n    public void theUserEntersADescriptionForTheRequest() {\r\n        driver.findElement(By.name(\"beschrijving\")).sendKeys(beschrijving);\r\n    }\r\n\r\n    @And(\"The user enters the mail of the client\")\r\n    public void theUserEntersTheMailOfTheClient() {\r\n        driver.findElement(By.name(\"emailKlant\")).sendKeys(emailKlant);\r\n    }\r\n\r\n    @And(\"Enters the create button\")\r\n    public void entersTheCreateButton() {\r\n        driver.findElement(By.name(\"createRequest\")).click();\r\n    }\r\n\r\n    @And(\"The request is shown in the list of requests\")\r\n    public void theRequestIsShownInTheListOfRequests() {\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/be/odisee/jzzz/MyStepdefsUI.java b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java
+--- a/src/test/java/be/odisee/jzzz/MyStepdefsUI.java	(revision 498d70b891b92fd111df8b65f6ff2e4bae48cb6f)
++++ b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java	(date 1764927627745)
+@@ -32,7 +32,7 @@
+ 
+     @Given("^User is on the Request page$")
+     public void userIsOnTheRequestPage() {
+-        driver.navigate().to("http://localhost:8080");
++        driver.navigate().to("http://localhost:8082");
+         driver.findElement(By.name("RequestTab")).click();
+     }
+ 
+Index: ../front/src/App.vue
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><template>\r\n  <div id=\"app\">\r\n    <h1>\uD83D\uDE80 Microservices Dashboard</h1>\r\n\r\n    <div class=\"tabs\">\r\n      <button\r\n          class=\"tab\"\r\n          :class=\"{ active: activeTab === 'ai' }\"\r\n          @click=\"activeTab = 'ai'\"\r\n      >\r\n        AI Service (Port 9082)\r\n      </button>\r\n      <button\r\n          class=\"tab\"\r\n          :class=\"{ active: activeTab === 'requests' }\"\r\n          @click=\"activeTab = 'requests'\"\r\n      >\r\n        Requests Service (Port 9081)\r\n      </button>\r\n    </div>\r\n\r\n    <AiService v-show=\"activeTab === 'ai'\" />\r\n    <RequestsService v-show=\"activeTab === 'requests'\" />\r\n  </div>\r\n</template>\r\n\r\n<script>\r\nimport AiService from './components/AiService.vue'\r\nimport RequestsService from './components/RequestsService.vue'\r\n\r\nexport default {\r\n  name: 'App',\r\n  components: {\r\n    AiService,\r\n    RequestsService\r\n  },\r\n  data() {\r\n    return {\r\n      activeTab: 'ai'\r\n    }\r\n  }\r\n}\r\n</script>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../front/src/App.vue b/../front/src/App.vue
+--- a/../front/src/App.vue	(revision 498d70b891b92fd111df8b65f6ff2e4bae48cb6f)
++++ b/../front/src/App.vue	(date 1764927627736)
+@@ -11,6 +11,7 @@
+         AI Service (Port 9082)
+       </button>
+       <button
++          name="RequestTab"
+           class="tab"
+           :class="{ active: activeTab === 'requests' }"
+           @click="activeTab = 'requests'"
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 498d70b891b92fd111df8b65f6ff2e4bae48cb6f)
++++ b/.idea/misc.xml	(date 1764927627738)
+@@ -8,5 +8,5 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"8989b4fd-ef56-4bec-8a6c-606374ea403f\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsAPI.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/features/api-request.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"364Qa2ZjKNRCTNHnfmDe7ZqdpkZ\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Cucumber Java.Feature: api-request.executor\": \"Run\",\r\n    \"Cucumber Java.Feature: createRequest.executor\": \"Run\",\r\n    \"Maven.leden [clean].executor\": \"Run\",\r\n    \"Maven.leden [install].executor\": \"Run\",\r\n    \"RequestMappingsPanelOrder0\": \"0\",\r\n    \"RequestMappingsPanelOrder1\": \"1\",\r\n    \"RequestMappingsPanelWidth0\": \"75\",\r\n    \"RequestMappingsPanelWidth1\": \"75\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"Spring Boot.JzzzLedenApplication.executor\": \"Run\",\r\n    \"git-widget-placeholder\": \"amine\",\r\n    \"kotlin-language-version-configured\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Amine/Documents/GitHub/ADT-C-LegalFly-Opdracht2/Deel 3/uservice-jzzz-toegang-v4b\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"project.structure.last.edited\": \"Project\",\r\n    \"project.structure.proportion\": \"0.0\",\r\n    \"project.structure.side.proportion\": \"0.0\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Cucumber Java.Feature: createRequest\">\r\n    <configuration name=\"Feature: api-request\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/api-request.feature\" />\r\n      <option name=\"GLUE\" value=\"be.odisee.jzzz\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"leden\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: api-request\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Feature: createRequest\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/createRequest.feature\" />\r\n      <option name=\"GLUE\" value=\"be.odisee.jzzz\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"leden\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: createRequest\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JzzzLedenApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"leden\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"be.odisee.jzzz.JzzzLedenApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Cucumber Java.Feature: createRequest\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: api-request\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150\" />\r\n        <option value=\"bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"8989b4fd-ef56-4bec-8a6c-606374ea403f\" name=\"Changes\" comment=\"\" />\r\n      <created>1764263424146</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1764263424146</updated>\r\n      <workItem from=\"1764317465520\" duration=\"1873000\" />\r\n      <workItem from=\"1764328137199\" duration=\"577000\" />\r\n      <workItem from=\"1764859540722\" duration=\"3819000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 498d70b891b92fd111df8b65f6ff2e4bae48cb6f)
++++ b/.idea/workspace.xml	(date 1764927627740)
+@@ -5,14 +5,12 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsAPI.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api-request.feature" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/../front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../front/src/App.vue" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -41,6 +39,7 @@
+   "keyToString": {
+     "Cucumber Java.Feature: api-request.executor": "Run",
+     "Cucumber Java.Feature: createRequest.executor": "Run",
++    "Cucumber Java.Scenario: The user want to add a new request.executor": "Run",
+     "Maven.leden [clean].executor": "Run",
+     "Maven.leden [install].executor": "Run",
+     "RequestMappingsPanelOrder0": "0",
+@@ -49,9 +48,9 @@
+     "RequestMappingsPanelWidth1": "75",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "Spring Boot.JzzzLedenApplication.executor": "Run",
+-    "git-widget-placeholder": "amine",
++    "git-widget-placeholder": "main",
+     "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "C:/Users/Amine/Documents/GitHub/ADT-C-LegalFly-Opdracht2/Deel 3/uservice-jzzz-toegang-v4b",
++    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel 3/front",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+@@ -91,6 +90,26 @@
+       <module name="leden" />
+       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+       <option name="SUGGESTED_NAME" value="Feature: createRequest" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="io.cucumber.core.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Scenario: The user want to add a new request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="5" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/createRequest.feature" />
++      <option name="GLUE" value="be.odisee.jzzz" />
++      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
++      <module name="leden" />
++      <option name="NAME_FILTER" value="^The user want to add a new request$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user want to add a new request$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: The user want to add a new request" />
+       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+       <extension name="coverage">
+         <pattern>
+@@ -112,6 +131,7 @@
+     <recent_temporary>
+       <list>
+         <item itemvalue="Cucumber Java.Feature: createRequest" />
++        <item itemvalue="Cucumber Java.Scenario: The user want to add a new request" />
+         <item itemvalue="Cucumber Java.Feature: api-request" />
+       </list>
+     </recent_temporary>
