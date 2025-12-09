@@ -23,7 +23,6 @@ public class Request {
     @Column(nullable = false)
     private String clientEmail;
 
-    @Column(nullable = false)
     private LocalDateTime createdAt;
 
     @Column

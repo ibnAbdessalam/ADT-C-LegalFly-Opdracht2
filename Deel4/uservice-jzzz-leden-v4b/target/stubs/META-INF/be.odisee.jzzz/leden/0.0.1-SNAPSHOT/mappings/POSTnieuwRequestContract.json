@@ -1,0 +1,25 @@
+{
+  "id" : "3a5850b3-29bc-4717-bafd-efe75cc168ff",
+  "request" : {
+    "url" : "/api/requests/AddRequest",
+    "method" : "POST",
+    "headers" : {
+      "Content-Type" : {
+        "matches" : "application/json.*"
+      }
+    },
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$[?(@.['title'] == 'test ')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['description'] == 'i want this to be verified')]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['clientEmail'] == 'ahmed@alhilou.be')]"
+    } ]
+  },
+  "response" : {
+    "status" : 201,
+    "body" : "{\"title\":\"test \",\"status\":\"PENDING\",\"description\":\"i want this to be verified\",\"clientEmail\":\"ahmed@alhilou.be\"}",
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "3a5850b3-29bc-4717-bafd-efe75cc168ff"
+}

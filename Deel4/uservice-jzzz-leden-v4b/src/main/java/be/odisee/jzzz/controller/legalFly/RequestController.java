@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/requests")
@@ -32,7 +33,14 @@ public class RequestController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping
+    @GetMapping("/{id}/state")
+    public ResponseEntity<String> getState(@PathVariable Long id)
+    {
+        return requestService.getRequestById(id)
+                .map(req -> ResponseEntity.ok(req.getStatus())).orElse(ResponseEntity.notFound().build());
+    }
+
+    @PostMapping("/AddRequest")
     public ResponseEntity<Request> createRequest(@RequestBody Request request) {
         Request created = requestService.createRequest(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);

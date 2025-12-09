@@ -1,0 +1,13 @@
+{
+  "id" : "80f4e8ef-ab20-47b1-aa56-e35dac4afff4",
+  "request" : {
+    "url" : "/api/requests/1/state",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "PENDING",
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "80f4e8ef-ab20-47b1-aa56-e35dac4afff4"
+}

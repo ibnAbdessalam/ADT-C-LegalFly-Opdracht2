@@ -5,11 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../legalfly/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../legalfly/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../legalfly/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../legalfly/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../legalfly/target/test-classes/be/odisee/legalfly/steps/ReportSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/../legalfly/target/test-classes/be/odisee/legalfly/steps/ReportSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../legalfly/target/test-classes/features/authentication.feature" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/BaseTestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Contracts/GetStatusContract.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Contracts/POSTnieuwRequestContract.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/legalFly/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/legalFly/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/ContractVerifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/ContractVerifierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/domain/legalFly/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/domain/legalFly/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,34 +46,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: api-request.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: createRequest.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: The user want to add a new request.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.leden [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.leden [install].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.JzzzLedenApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel 3/front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: api-request.executor": "Run",
+    "Cucumber Java.Feature: createRequest.executor": "Run",
+    "Cucumber Java.Scenario: The user want to add a new request.executor": "Run",
+    "JUnit.ContractVerifierTest.executor": "Run",
+    "Maven.leden [clean].executor": "Run",
+    "Maven.leden [compile].executor": "Run",
+    "Maven.leden [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.JzzzLedenApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel4/uservice-jzzz-leden-v4b",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: api-request">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\java\be\odisee\jzzz" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.odisee.jzzz" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ContractVerifierTest">
     <configuration name="Feature: api-request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api-request.feature" />
@@ -120,6 +143,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContractVerifierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leden" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.odisee.jzzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="be.odisee.jzzz.ContractVerifierTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JzzzLedenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="leden" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="be.odisee.jzzz.JzzzLedenApplication" />
@@ -129,6 +167,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContractVerifierTest" />
         <item itemvalue="Cucumber Java.Feature: api-request" />
         <item itemvalue="Cucumber Java.Feature: createRequest" />
         <item itemvalue="Cucumber Java.Scenario: The user want to add a new request" />
@@ -138,8 +177,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
@@ -154,6 +193,8 @@
       <workItem from="1764317465520" duration="1873000" />
       <workItem from="1764328137199" duration="577000" />
       <workItem from="1764859540722" duration="3819000" />
+      <workItem from="1765288664977" duration="744000" />
+      <workItem from="1765290540538" duration="6542000" />
     </task>
     <servers />
   </component>
