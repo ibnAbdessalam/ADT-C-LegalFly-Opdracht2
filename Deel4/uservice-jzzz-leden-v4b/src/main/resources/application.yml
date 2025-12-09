@@ -1,18 +1,13 @@
 spring:
-  thymeleaf:
-    enabled: true
-    prefix: classpath:/templates/
-    suffix: .html
-    mode: HTML
-    cache: false
   datasource:
     url: jdbc:mysql://localhost/adt_c_opdracht2_deel2
     username: legalflyuser_opdracht2
     password: legalflypassword
   jpa:
+    hibernate:
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-
 server:
-  port: 9090
+  port: 9081
