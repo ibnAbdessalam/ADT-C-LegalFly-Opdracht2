@@ -43,6 +43,10 @@ public class MyStepdefsUI {
         // Click the tab to make the form visible (since it's hidden by default)
         wait.until(ExpectedConditions.elementToBeClickable(By.name("RequestTab"))).click();
 =======
+    @Given("^User is on the Request page$")
+    public void userIsOnTheRequestPage() {
+        driver.navigate().to("http://localhost:8080");
+        driver.findElement(By.name("RequestTab")).click();
 >>>>>>> Stashed changes
     }
 
