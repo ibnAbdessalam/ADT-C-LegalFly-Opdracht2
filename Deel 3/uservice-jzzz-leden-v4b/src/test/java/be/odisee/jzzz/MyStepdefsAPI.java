@@ -1,7 +1,6 @@
 package be.odisee.jzzz;
 
-import be.odisee.jzzz.domain.legalFly.Request; // Make sure this import matches your package structure
-import io.cucumber.datatable.DataTable;
+import be.odisee.jzzz.domain.legalFly.Request;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,8 +10,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.EntityExchangeResult;
 import org.springframework.test.web.reactive.server.WebTestClient;
-
-import java.util.Map;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
@@ -26,33 +23,24 @@ public class MyStepdefsAPI {
     private WebTestClient webTestClient;
 
     private String endpoint;
-
-    // We store the *Result* (data), not the *Spec* (stream), so we can read it multiple times
     private EntityExchangeResult<String> lastResult;
+    private Long lastCreatedId;
 
     @Given("I use the API endpoint {string}")
     public void iUseTheAPIEndpoint(String url) {
         this.endpoint = url;
     }
 
+    // Matches: When I send a POST request with the following data:
     @When("I send a POST request with the following data:")
-    public void iSendAPOSTRequestWithTheFollowingData(DataTable dataTable) {
-        Map<String, String> data = dataTable.asMap(String.class, String.class);
-
-        // Construct the Request object
-        Request request = new Request(); // Assuming you have a default constructor or setters
-        request.setTitle(data.get("title"));
-        request.setDescription(data.get("description"));
-        request.setClientEmail(data.get("clientEmail"));
-        // If your Request class constructor is different, adjust above
-
+    public void iSendAPOSTRequestWithTheFollowingData(String jsonBody) {
         this.lastResult = webTestClient.post()
                 .uri(endpoint)
                 .contentType(MediaType.APPLICATION_JSON)
-                .bodyValue(request)
+                .bodyValue(jsonBody)
                 .exchange()
-                .expectBody(String.class) // Consumes stream here
-                .returnResult();          // Stores result in memory
+                .expectBody(String.class)
+                .returnResult();
     }
 
     @When("I send a GET request")
@@ -66,7 +54,6 @@ public class MyStepdefsAPI {
 
     @Then("the response status should be {int}")
     public void theResponseStatusShouldBe(int statusCode) {
-        // Check status from the stored result
         assertEquals(statusCode, lastResult.getStatus().value());
     }
 
@@ -82,5 +69,43 @@ public class MyStepdefsAPI {
         String body = lastResult.getResponseBody();
         assertNotNull("Response body is null", body);
         assertTrue("Response is not a JSON list", body.trim().startsWith("["));
+    }
+
+    // Helper step for UPDATE/DELETE scenarios
+    @Given("I have a request with title {string}")
+    public void iHaveARequestWithTitle(String title) {
+        String json = String.format("{\"title\": \"%s\", \"clientEmail\": \"test@test.com\"}", title);
+
+        EntityExchangeResult<Request> result = webTestClient.post()
+                .uri("/api/requests")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(json)
+                .exchange()
+                .expectBody(Request.class)
+                .returnResult();
+
+        this.lastCreatedId = result.getResponseBody().getId();
+    }
+
+    @When("I send a PUT request to update title to {string}")
+    public void iSendAPUTRequestToUpdateTitleTo(String newTitle) {
+        String json = String.format("{\"title\": \"%s\", \"clientEmail\": \"test@test.com\", \"status\": \"PENDING\"}", newTitle);
+
+        this.lastResult = webTestClient.put()
+                .uri(endpoint + "/" + lastCreatedId)
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(json)
+                .exchange()
+                .expectBody(String.class)
+                .returnResult();
+    }
+
+    @When("I send a DELETE request")
+    public void iSendADELETERequest() {
+        this.lastResult = webTestClient.delete()
+                .uri(endpoint + "/" + lastCreatedId)
+                .exchange()
+                .expectBody(String.class)
+                .returnResult();
     }
 }

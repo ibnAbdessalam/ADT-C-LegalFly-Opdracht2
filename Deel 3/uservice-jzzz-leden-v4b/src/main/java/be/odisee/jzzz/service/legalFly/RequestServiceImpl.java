@@ -33,6 +33,12 @@ public class RequestServiceImpl implements RequestService {
 
     // Command methods
     public Request createRequest(Request request) {
+        if (request.getTitle() == null || request.getTitle().trim().isEmpty()) {
+            throw new IllegalArgumentException("Request title cannot be empty");
+        }
+
+        request.setStatus("PENDING");
+
         return requestRepository.save(request);
     }
 

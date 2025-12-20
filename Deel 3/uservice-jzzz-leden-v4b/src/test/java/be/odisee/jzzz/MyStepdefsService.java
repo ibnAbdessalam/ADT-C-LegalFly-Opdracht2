@@ -1,67 +1,85 @@
 package be.odisee.jzzz;
 
+import be.odisee.jzzz.dao.legalFly.RequestRepository;
 import be.odisee.jzzz.domain.legalFly.Request;
 import be.odisee.jzzz.service.legalFly.RequestService;
-
-import io.cucumber.datatable.DataTable;
-import io.cucumber.spring.CucumberContextConfiguration;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import io.cucumber.java.nl.*;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class MyStepdefsService {
 
     @Autowired
     RequestService requestService;
 
-    private Request lastCreatedRequest;
-    private List<Request> lastRequestList;
+    @Autowired
+    RequestRepository requestRepository;
 
-    // ---------------------------
-    // Scenario 1: request aanmaken
-    // ---------------------------
+    private Request lastRequest;
+    private Exception lastException;
 
-    @Gegeven("een jurist met id {int} en een wet met id {int}")
-    public void eenJuristMetIdEnEenWetMetId(int juristId, int wetId) {
-        // In deze test gebruiken we enkel de IDs als context
-        // (zoals bij het docentvoorbeeld: geen database setup hier)
-        assertThat(juristId).isGreaterThan(0);
-        assertThat(wetId).isGreaterThan(0);
+    @Given("there are no requests")
+    public void thereAreNoRequests() {
+        // Crucial fix: Clean the database before every scenario
+        requestRepository.deleteAll();
     }
 
-    @Wanneer("ik een request aanmaak met de inhoud {string}")
-    public void ikEenRequestAanmaakMetDeInhoud(String inhoud) {
-        Request request = new Request();
-        request.setTitle(inhoud);
-        request.setStatus("NIEUW");
-
-        lastCreatedRequest = requestService.createRequest(request);
+    @When("I create a request with title {string}")
+    public void iCreateARequestWithTitle(String title) {
+        Request req = new Request();
+        req.setTitle(title);
+        req.setClientEmail("test@example.com");
+        lastRequest = requestService.createRequest(req);
     }
 
-    @Dan("wordt de request succesvol aangemaakt")
-    public void wordtDeRequestSuccesvolAangemaakt() {
-        assertThat(lastCreatedRequest).isNotNull();
-        assertThat(lastCreatedRequest.getId()).isNotNull();
-        assertThat(lastCreatedRequest.getTitle()).isEqualTo("Test request");
+    @Then("the created request should have status {string}")
+    @Then("the request should have status {string}")
+    public void theRequestShouldHaveStatus(String expectedStatus) {
+        assertThat(lastRequest.getStatus()).isEqualTo(expectedStatus);
     }
 
-    // ---------------------------
-    // Scenario 2: alle requests ophalen
-    // ---------------------------
-
-    @Wanneer("ik alle requests opvraag")
-    public void ikAlleRequestsOpvraag() {
-        lastRequestList = requestService.getAllRequests();
+    @When("I try to create a request with an empty title")
+    public void iTryToCreateARequestWithAnEmptyTitle() {
+        Request req = new Request();
+        req.setTitle("");
+        try {
+            requestService.createRequest(req);
+        } catch (Exception e) {
+            lastException = e;
+        }
     }
 
-    @Dan("ontvang ik een lijst van requests")
-    public void ontvangIkEenLijstVanRequests() {
-        assertThat(lastRequestList).isNotNull();
-        assertThat(lastRequestList).isInstanceOf(List.class);
+    @Then("I should receive an error message {string}")
+    public void iShouldReceiveAnErrorMessage(String expectedMessage) {
+        assertThat(lastException).isNotNull();
+        assertThat(lastException.getMessage()).isEqualTo(expectedMessage);
+    }
+
+    @When("I update the request status to {string}")
+    public void iUpdateTheRequestStatusTo(String newStatus) {
+        lastRequest.setStatus(newStatus);
+        requestService.updateRequest(lastRequest.getId(), lastRequest);
+        lastRequest = requestService.getRequestById(lastRequest.getId()).orElse(null);
+    }
+
+    @When("I delete the request")
+    public void iDeleteTheRequest() {
+        requestService.deleteRequest(lastRequest.getId());
+    }
+
+    @Then("the request should no longer exist")
+    public void theRequestShouldNoLongerExist() {
+        boolean exists = requestService.getRequestById(lastRequest.getId()).isPresent();
+        assertThat(exists).isFalse();
+    }
+
+    @Then("the request list should contain {int} request")
+    public void theRequestListShouldContainRequest(int count) {
+        assertThat(requestService.getAllRequests()).hasSize(count);
     }
 }
