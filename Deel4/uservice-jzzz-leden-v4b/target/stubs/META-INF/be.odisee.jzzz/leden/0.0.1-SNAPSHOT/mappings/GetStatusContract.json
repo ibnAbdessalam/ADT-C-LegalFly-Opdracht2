@@ -1,5 +1,5 @@
 {
-  "id" : "80f4e8ef-ab20-47b1-aa56-e35dac4afff4",
+  "id" : "e3328a2b-ecde-4d5f-80f6-36c7bd626ef3",
   "request" : {
     "url" : "/api/requests/1/state",
     "method" : "GET"
@@ -9,5 +9,5 @@
     "body" : "PENDING",
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "80f4e8ef-ab20-47b1-aa56-e35dac4afff4"
+  "uuid" : "e3328a2b-ecde-4d5f-80f6-36c7bd626ef3"
 }

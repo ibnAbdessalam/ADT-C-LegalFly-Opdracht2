@@ -43,7 +43,7 @@ public class SecurityConfig {
 
         http
                 .authorizeHttpRequests(a -> a
-                        .requestMatchers("/login","/login/**", "/default-ui.css", "/favicon.ico", "/css/**", "/js/**", "/images/**", "/ask",  "/api/ask", "/**/ask").permitAll()
+                        .requestMatchers("/login","/login/**", "/default-ui.css", "/favicon.ico", "/css/**", "/js/**", "/images/**", "/ask",  "/api/ask", "/ask").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         .anyRequest().authenticated()
                 )

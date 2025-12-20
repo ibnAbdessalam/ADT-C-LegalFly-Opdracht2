@@ -1,5 +1,5 @@
 {
-  "id" : "3a5850b3-29bc-4717-bafd-efe75cc168ff",
+  "id" : "987dffa6-7cc8-44c6-8fd5-e575b3bf97c7",
   "request" : {
     "url" : "/api/requests/AddRequest",
     "method" : "POST",
@@ -21,5 +21,5 @@
     "body" : "{\"title\":\"test \",\"status\":\"PENDING\",\"description\":\"i want this to be verified\",\"clientEmail\":\"ahmed@alhilou.be\"}",
     "transformers" : [ "response-template", "spring-cloud-contract" ]
   },
-  "uuid" : "3a5850b3-29bc-4717-bafd-efe75cc168ff"
+  "uuid" : "987dffa6-7cc8-44c6-8fd5-e575b3bf97c7"
 }

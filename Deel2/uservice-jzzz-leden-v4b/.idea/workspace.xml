@@ -5,50 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../front/src/assets/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/components/AiService.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/components/RequestsService.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/services/aiService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../front/src/services/requestsService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../timesheet-front-simple(1)/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../timesheet-front-simple(1)/src/components/AiService.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../timesheet-front-simple(1)/src/components/RequestsService.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../timesheet-front-simple(1)/src/services/aiService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../timesheet-front-simple(1)/src/services/requestsService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../deel2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../deel2/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../deel2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../deel2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../deel2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../deel2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/service/LegalFly/ai/AiServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/JzzzLedenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/JzzzLedenApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/RepositoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/RepositoryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/RepositoryConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/dao/EvenementRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/dao/ToegangRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/domain/Answer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/domain/Answer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/domain/Evenement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/domain/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/domain/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/domain/Toegang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/service/aiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/service/aiService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/src/main/java/be/odisee/jzzz/service/OntvangstWebfrontService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-webfront-ontvangst-v4b/src/main/java/be/odisee/jzzz/service/OntvangstWebfrontServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +62,7 @@
     "Spring Boot.JzzzLedenApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel2/front",
+    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel1/brainstorm2018wa2sb2025seleniumSimple",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -112,6 +98,10 @@
       <updated>1764263424146</updated>
       <workItem from="1764317465520" duration="1873000" />
       <workItem from="1764328137199" duration="577000" />
+      <workItem from="1766055754987" duration="490000" />
+      <workItem from="1766080080059" duration="755000" />
+      <workItem from="1766080950120" duration="385000" />
+      <workItem from="1766136853242" duration="1292000" />
     </task>
     <servers />
   </component>
