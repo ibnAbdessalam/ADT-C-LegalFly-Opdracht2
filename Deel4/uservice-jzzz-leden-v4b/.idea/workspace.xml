@@ -5,45 +5,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Service/service-request.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/UI/deleteRequest.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/UI/updateRequest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/service/LegalFly/ai/AiServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/JzzzLedenApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/domain/RequestTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/acorn.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/acorn.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/ansi-html" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/ansi-html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/ansi-html.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/ansi-html.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/autoprefixer" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/autoprefixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/autoprefixer.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/autoprefixer.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/baseline-browser-mapping" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/baseline-browser-mapping" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/baseline-browser-mapping.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/baseline-browser-mapping.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/browserslist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/browserslist.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/browserslist.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/cssesc" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/cssesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/cssesc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/cssesc.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/eslint" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/eslint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/eslint.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/eslint.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/esparse.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/esparse.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/esvalidate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/esvalidate.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/flat" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/flat.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/flat.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/he" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/he" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/he.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/he.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/highlight" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/highlight" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/highlight.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/highlight.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/html-minifier-terser" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/html-minifier-terser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/html-minifier-terser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/html-minifier-terser.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/is-ci" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/is-ci" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/is-ci.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/is-ci.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/is-docker" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/is-docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/is-docker.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/is-docker.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/js-yaml.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/js-yaml.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/jsesc.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/jsesc.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/json5.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/json5.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/mime.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/mime.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/multicast-dns" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/multicast-dns" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/multicast-dns.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/multicast-dns.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/nanoid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/nanoid.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/nanoid.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/opener" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/opener" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/opener.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/opener.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/parser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/parser.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/prettier" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/prettier" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/prettier.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/prettier.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/regjsparser" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/regjsparser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/regjsparser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/regjsparser.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/resolve.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/resolve.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/rimraf.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/rimraf.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/semver.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/semver.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/svgo" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/svgo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/svgo.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/svgo.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/terser" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/terser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/terser.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/terser.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/update-browserslist-db" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/update-browserslist-db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/update-browserslist-db.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/update-browserslist-db.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/uuid.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/uuid.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/vue-cli-service" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/vue-cli-service" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/vue-cli-service.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/vue-cli-service.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/webpack" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/webpack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-bundle-analyzer" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-bundle-analyzer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-bundle-analyzer.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-bundle-analyzer.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-dev-server" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-dev-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-dev-server.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/webpack-dev-server.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/webpack.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/webpack.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/which" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../front/node_modules/.bin/which.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/../front/node_modules/.bin/which.ps1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/JzzzLedenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/JzzzLedenApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/legalFly/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/legalFly/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/legalFly/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/legalFly/RequestServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/BaseTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/BaseTestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/ContractVerifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/ContractVerifierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Contracts/GetStatusContract.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Contracts/GetStatusContract.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api-request.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/API/api-request.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/createRequest.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UI/createRequest.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/JzzzLedenApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/JzzzLedenApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/legalFly/RequestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/domain/legalFly/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/domain/legalFly/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/contracts/be/odisee/jzzz/ContractVerifierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/contracts/be/odisee/jzzz/ContractVerifierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/leden-0.0.1-SNAPSHOT-stubs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/leden-0.0.1-SNAPSHOT-stubs.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/leden-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/leden-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/leden-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/leden-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/convert/default-convert/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/convert/default-convert/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/convert/default-convert/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/convert/default-convert/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/generateStubs/default-generateStubs/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/generateStubs/default-generateStubs/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/generateTests/default-generateTests/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/generateTests/default-generateTests/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/generateTests/default-generateTests/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/spring-cloud-contract-maven-plugin/generateTests/default-generateTests/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/contracts/GetStatusContract.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/contracts/GetStatusContract.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/GetStatusContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/GetStatusContract.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/POSTnieuwRequestContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/POSTnieuwRequestContract.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
@@ -52,15 +134,28 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/Surefire suite/Surefire test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/jquery-3.6.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/junitreports/TEST-be.odisee.jzzz.JzzzLedenApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/junitreports/TEST-be.odisee.jzzz.JzzzLedenApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports1.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-reports2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-junit-results/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/jquery-3.6.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports1.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports2.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-reports2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-native-results/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Contracts/GetStatusContract.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Contracts/GetStatusContract.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/BaseTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/BaseTestClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/ContractVerifierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/api-request.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/createRequest.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +172,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -89,8 +188,11 @@
   "keyToString": {
     "Cucumber Java.Feature: api-request.executor": "Run",
     "Cucumber Java.Feature: createRequest.executor": "Run",
+    "Cucumber Java.Feature: service-request.executor": "Run",
     "Cucumber Java.Scenario: The user want to add a new request.executor": "Run",
+    "Groovy.GetStatusContract (1).executor": "Run",
     "Groovy.GetStatusContract.executor": "Run",
+    "Groovy.POSTnieuwRequestContract (1).executor": "Run",
     "Groovy.POSTnieuwRequestContract.executor": "Run",
     "JUnit.ContractVerifierTest.executor": "Run",
     "JUnit.ContractVerifierTest.validate_getStatusContract.executor": "Run",
@@ -98,6 +200,8 @@
     "Maven.leden [clean].executor": "Run",
     "Maven.leden [compile].executor": "Run",
     "Maven.leden [install].executor": "Run",
+    "Maven.leden [org.springframework.cloud:spring-cloud-contract-maven-plugin:4.1.2:run].executor": "Run",
+    "Maven.leden [test].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -107,7 +211,7 @@
     "Spring Boot.JzzzLedenApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel4/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz",
+    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel2/uservice-jzzz-leden-v4b",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -125,33 +229,71 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\java\be\odisee\jzzz" />
+      <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\java\be\odisee\jzzz\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\resources\features\UI" />
+      <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\resources\features\API" />
       <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\java\be\odisee\jzzz" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.odisee.jzzz" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContractVerifierTest">
-    <configuration name="GetStatusContract" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+  <component name="RunManager" selected="JUnit.features in leden">
+    <configuration name="Feature: api-request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/API/api-request.feature" />
+      <option name="GLUE" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="leden" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/test/resources/Contracts/GetStatusContract.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/resources/Contracts" />
-      <setting name="debug" value="false" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: api-request" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POSTnieuwRequestContract" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+    <configuration name="Feature: createRequest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UI/createRequest.feature" />
+      <option name="GLUE" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="leden" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/test/resources/Contracts/POSTnieuwRequestContract.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/resources/Contracts" />
-      <setting name="debug" value="false" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: createRequest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: service-request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Service/service-request.feature" />
+      <option name="GLUE" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="leden" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: service-request" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,33 +313,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContractVerifierTest.validate_getStatusContract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="features in leden" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leden" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.odisee.jzzz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.odisee.jzzz" />
-      <option name="MAIN_CLASS_NAME" value="be.odisee.jzzz.ContractVerifierTest" />
-      <option name="METHOD_NAME" value="validate_getStatusContract" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JzzzLedenApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leden" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="be.odisee.jzzz.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="be.odisee.jzzz" />
-      <option name="MAIN_CLASS_NAME" value="be.odisee.jzzz.JzzzLedenApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/resources/features" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,11 +330,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.features in leden" />
+        <item itemvalue="Cucumber Java.Feature: createRequest" />
+        <item itemvalue="Cucumber Java.Feature: service-request" />
+        <item itemvalue="Cucumber Java.Feature: api-request" />
         <item itemvalue="JUnit.ContractVerifierTest" />
-        <item itemvalue="JUnit.ContractVerifierTest.validate_getStatusContract" />
-        <item itemvalue="JUnit.JzzzLedenApplicationTests" />
-        <item itemvalue="Groovy.POSTnieuwRequestContract" />
-        <item itemvalue="Groovy.GetStatusContract" />
       </list>
     </recent_temporary>
   </component>
@@ -243,6 +362,7 @@
       <workItem from="1766081391240" duration="2256000" />
       <workItem from="1766137531014" duration="871000" />
       <workItem from="1766138682602" duration="1672000" />
+      <workItem from="1766311358189" duration="7931000" />
     </task>
     <servers />
   </component>

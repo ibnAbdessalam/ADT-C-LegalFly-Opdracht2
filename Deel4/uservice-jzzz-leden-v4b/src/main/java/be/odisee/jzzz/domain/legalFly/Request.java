@@ -17,7 +17,7 @@ public class Request {
     @Column(length = 2000)
     private String description;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String status; // PENDING, IN_PROGRESS, COMPLETED, CANCELLED
 
     @Column(nullable = false)

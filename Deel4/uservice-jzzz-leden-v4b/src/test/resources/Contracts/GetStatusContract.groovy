@@ -6,7 +6,7 @@ Contract.make {
     description("Returns state of the asked request")
     request {
         method GET()
-        url("/api/requests/1/state")
+        url("/api/requests/10/state")
 
     }
     response {

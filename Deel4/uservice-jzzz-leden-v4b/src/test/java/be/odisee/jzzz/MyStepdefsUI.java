@@ -32,7 +32,7 @@ public class MyStepdefsUI {
 
     @Given("^User is on the Request page$")
     public void userIsOnTheRequestPage() {
-        driver.navigate().to("http://localhost:8082");
+        driver.navigate().to("http://localhost:8081");
         driver.findElement(By.name("RequestTab")).click();
     }
 

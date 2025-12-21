@@ -40,7 +40,7 @@ public class RequestController {
                 .map(req -> ResponseEntity.ok(req.getStatus())).orElse(ResponseEntity.notFound().build());
     }
 
-    @PostMapping("/AddRequest")
+    @PostMapping
     public ResponseEntity<Request> createRequest(@RequestBody Request request) {
         Request created = requestService.createRequest(request);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
@@ -61,5 +61,10 @@ public class RequestController {
         return deleted
                 ? ResponseEntity.noContent().build()
                 : ResponseEntity.notFound().build();
+    }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException e) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
     }
 }

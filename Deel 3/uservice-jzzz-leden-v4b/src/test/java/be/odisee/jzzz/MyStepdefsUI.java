@@ -36,18 +36,17 @@ public class MyStepdefsUI {
         }
     }
 
-<<<<<<< Updated upstream
     @Given("I am on the LegalFly application")
     public void iAmOnTheLegalFlyApplication() {
         driver.get("http://localhost:8080");
         // Click the tab to make the form visible (since it's hidden by default)
         wait.until(ExpectedConditions.elementToBeClickable(By.name("RequestTab"))).click();
-=======
+
+    }
     @Given("^User is on the Request page$")
     public void userIsOnTheRequestPage() {
         driver.navigate().to("http://localhost:8080");
         driver.findElement(By.name("RequestTab")).click();
->>>>>>> Stashed changes
     }
 
     @When("I enter {string} in the title field")

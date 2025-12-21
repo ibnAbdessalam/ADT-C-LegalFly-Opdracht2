@@ -24,7 +24,7 @@ public class ContractVerifierTest extends BaseTestClass {
 
 		// when:
 			ResponseOptions response = given().spec(request)
-					.get("/api/requests/1/state");
+					.get("/api/requests/10/state");
 
 		// then:
 			assertThat(response.statusCode()).isEqualTo(200);

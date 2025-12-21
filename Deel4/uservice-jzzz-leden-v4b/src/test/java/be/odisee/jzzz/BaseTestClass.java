@@ -14,14 +14,12 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder;
 
 // @RunWith(SpringRunner.class)
-@ActiveProfiles("test")
-// @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @DirtiesContext
-@WebMvcTest(RequestController.class)
 @AutoConfigureMessageVerifier
 public class BaseTestClass {
 
-    @MockBean
+    @Autowired
     private RequestController requestController;
 
 
