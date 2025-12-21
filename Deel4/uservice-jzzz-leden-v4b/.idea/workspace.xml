@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel 3/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="364Qa2ZjKNRCTNHnfmDe7ZqdpkZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: api-request.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: createRequest.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: The user want to add a new request.executor&quot;: &quot;Run&quot;,
+    &quot;Groovy.GetStatusContract.executor&quot;: &quot;Run&quot;,
+    &quot;Groovy.POSTnieuwRequestContract.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContractVerifierTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ContractVerifierTest.validate_getStatusContract.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JzzzLedenApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.leden [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.leden [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.leden [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.JzzzLedenApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel4/uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\java\be\odisee\jzzz" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github2526\ADT-C-LegalFly-Opdracht2\Deel4\uservice-jzzz-leden-v4b\src\test\java\be\odisee\jzzz" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="be.odisee.jzzz" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ContractVerifierTest">
+    <configuration name="GetStatusContract" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="leden" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/test/resources/Contracts/GetStatusContract.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/resources/Contracts" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POSTnieuwRequestContract" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="leden" />
+      <setting name="path" value="file://$PROJECT_DIR$/src/test/resources/Contracts/POSTnieuwRequestContract.groovy" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/resources/Contracts" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContractVerifierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leden" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.odisee.jzzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="be.odisee.jzzz.ContractVerifierTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContractVerifierTest.validate_getStatusContract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leden" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.odisee.jzzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="be.odisee.jzzz.ContractVerifierTest" />
+      <option name="METHOD_NAME" value="validate_getStatusContract" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JzzzLedenApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leden" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.odisee.jzzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="be.odisee.jzzz.JzzzLedenApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JzzzLedenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="leden" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="be.odisee.jzzz.JzzzLedenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContractVerifierTest" />
+        <item itemvalue="JUnit.ContractVerifierTest.validate_getStatusContract" />
+        <item itemvalue="JUnit.JzzzLedenApplicationTests" />
+        <item itemvalue="Groovy.POSTnieuwRequestContract" />
+        <item itemvalue="Groovy.GetStatusContract" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="" />
+      <created>1764263424146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764263424146</updated>
+      <workItem from="1764317465520" duration="1873000" />
+      <workItem from="1764328137199" duration="577000" />
+      <workItem from="1764859540722" duration="3819000" />
+      <workItem from="1765288664977" duration="744000" />
+      <workItem from="1765290540538" duration="7095000" />
+      <workItem from="1766081391240" duration="2256000" />
+      <workItem from="1766137531014" duration="871000" />
+      <workItem from="1766138682602" duration="1672000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

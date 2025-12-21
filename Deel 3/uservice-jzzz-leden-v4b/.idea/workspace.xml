@@ -5,10 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8989b4fd-ef56-4bec-8a6c-606374ea403f" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Deel2/front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/front/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Deel2/front/src/components/RequestsService.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/front/src/components/RequestsService.vue" afterDir="false" />
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/manage-requests-api.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/manage-requests-service.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/manage-requests-ui.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/legalFly/RequestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/legalFly/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/legalFly/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/legalFly/RequestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/legalFly/RequestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api-request.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/createRequest.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/service/legalFly/RequestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/api-request.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/createRequest.feature" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/service/LegalFly/ai/AiServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +105,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< Updated upstream
+=======
+    "Cucumber Java.Feature: api-request.executor": "Run",
+    "Cucumber Java.Feature: createRequest.executor": "Run",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    "Cucumber Java.Feature: manage-requests-api.executor": "Run",
+    "Cucumber Java.Feature: manage-requests-service.executor": "Run",
+    "Cucumber Java.Feature: manage-requests-ui.executor": "Run",
+    "Cucumber Java.Feature: ui-create-request.executor": "Run",
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+    "Cucumber Java.Scenario: The user want to add a new request.executor": "Run",
+>>>>>>> Stashed changes
     "Maven.leden [clean].executor": "Run",
     "Maven.leden [compile].executor": "Run",
     "Maven.leden [install].executor": "Run",
@@ -46,7 +132,19 @@
     "Spring Boot.JzzzLedenApplication.executor": "Run",
     "git-widget-placeholder": "Imran",
     "kotlin-language-version-configured": "true",
+<<<<<<< Updated upstream
     "last_opened_file_path": "C:/Github2526/legalflySeleniumSimple/brainstorm2018wa2sb2025seleniumSimple",
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    "last_opened_file_path": "C:/Users/Amine/Documents/GitHub/ADT-C-LegalFly-Opdracht2/Deel 3/uservice-jzzz-leden-v4b",
+=======
+    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel4/uservice-jzzz-leden-v4b",
+>>>>>>> Stashed changes
+=======
+    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel4/uservice-jzzz-leden-v4b",
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,12 +153,43 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+<<<<<<< Updated upstream
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="be.odisee.jzzz" />
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Feature: createRequest">
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+  <component name="RunManager" selected="Cucumber Java.Feature: manage-requests-ui">
+=======
+  <component name="RunManager" selected="Cucumber Java.Feature: createRequest">
+>>>>>>> Stashed changes
+=======
+  <component name="RunManager" selected="Cucumber Java.Feature: createRequest">
+>>>>>>> Stashed changes
+    <configuration name="Feature: api-request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api-request.feature" />
+      <option name="GLUE" value="be.odisee.jzzz" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="leden" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: api-request" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+>>>>>>> Stashed changes
     <configuration name="Feature: createRequest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/createRequest.feature" />
@@ -88,7 +217,26 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< Updated upstream
         <item itemvalue="Cucumber Java.Feature: createRequest" />
+=======
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        <item itemvalue="Cucumber Java.Feature: manage-requests-ui" />
+        <item itemvalue="Cucumber Java.Feature: manage-requests-api" />
+        <item itemvalue="Cucumber Java.Feature: manage-requests-service" />
+        <item itemvalue="Cucumber Java.Feature: createRequest" />
+        <item itemvalue="Cucumber Java.Feature: api-request" />
+=======
+        <item itemvalue="Cucumber Java.Feature: createRequest" />
+        <item itemvalue="Cucumber Java.Feature: api-request" />
+=======
+        <item itemvalue="Cucumber Java.Feature: createRequest" />
+        <item itemvalue="Cucumber Java.Feature: api-request" />
+>>>>>>> Stashed changes
+        <item itemvalue="Cucumber Java.Scenario: The user want to add a new request" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +258,22 @@
       <updated>1764263424146</updated>
       <workItem from="1764317465520" duration="1873000" />
       <workItem from="1764328137199" duration="577000" />
+<<<<<<< Updated upstream
       <workItem from="1764442762803" duration="7430000" />
+=======
+      <workItem from="1764859540722" duration="3819000" />
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+      <workItem from="1766231547186" duration="9876000" />
+=======
+      <workItem from="1766081004622" duration="848000" />
+      <workItem from="1766137125659" duration="995000" />
+>>>>>>> Stashed changes
+=======
+      <workItem from="1766081004622" duration="848000" />
+      <workItem from="1766137125659" duration="995000" />
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
