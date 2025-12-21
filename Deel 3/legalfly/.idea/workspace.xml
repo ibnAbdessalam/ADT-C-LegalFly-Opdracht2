@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="20849d30-3ba3-40ad-ab4f-881d3c8480dc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/main/java/be/odisee/brainstorm/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Jurist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Law.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/classes/be/odisee/brainstorm/domain/LegalFly/Report.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/service/LegalFly/ai/AiServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/frontend/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/target/classes/be/odisee/jzzz/controller/AskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/MyStepdefsUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/RequestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/shelf/Uncommitted_changes_before_Merge_at_05_12_2025_10_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel4/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36NrxnaniA8dw51ByweT7zlmJMU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: report.executor": "Run",
+    "Cucumber Java.Feature: request.executor": "Run",
+    "JUnit.features in legalfly.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.LegalflyApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Github2526/ADT-C-LegalFly-Opdracht2/Deel 3/legalfly",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Cucumber Java.Feature: request">
+    <configuration name="Feature: report" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/report.feature" />
+      <option name="GLUE" value="be.odisee.legalfly.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="legalfly" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: report" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: request" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/request.feature" />
+      <option name="GLUE" value="be.odisee.legalfly.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="legalfly" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: request" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="features in legalfly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="legalfly" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/resources/features" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LegalflyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="legalfly" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="be.odisee.legalfly.LegalflyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Feature: request" />
+        <item itemvalue="Cucumber Java.Feature: report" />
+        <item itemvalue="JUnit.features in legalfly" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20849d30-3ba3-40ad-ab4f-881d3c8480dc" name="Changes" comment="" />
+      <created>1764858119197</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764858119197</updated>
+      <workItem from="1764858120343" duration="399000" />
+      <workItem from="1764858538909" duration="40000" />
+      <workItem from="1764858592454" duration="1294000" />
+      <workItem from="1764931593529" duration="1001000" />
+      <workItem from="1766137140372" duration="735000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
