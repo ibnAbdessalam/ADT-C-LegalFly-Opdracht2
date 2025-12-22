@@ -29,39 +29,42 @@ public class CannedResponseGenerator {
         this.restClient = RestClient.builder()
                 .baseUrl("https://api.openai.com/v1")
                 .defaultHeader("Authorization", "Bearer " + apiKey)
-                .defaultHeader("Content-Type", "application/json")
-                .defaultHeader("Accept", "application/json")
                 .build();
+        if (apiKey != null && !apiKey.isEmpty()) {
+            System.out.println("API key loaded, length: " + apiKey.length());
+            System.out.println("API key prefix: " + apiKey.substring(0, 5) + "*****");
+        } else {
+            System.out.println("API key not loaded!");
+        }
+
     }
 
-//    public void nieuwCannedResponse(String prompt, String filename) {
-//        OpenAIClient client = OpenAIOkHttpClient.fromEnv();
-//        ResponseCreateParams params = ResponseCreateParams.builder()
-//                .input(prompt)
-//                .model("gpt-4o-mini")
-//                .build();
-//        Response response = client.responses().create(params);
-//        System.out.println(response.outputText()); }
-//    }
+
 
     public void generate(String prompt, String filename) throws Exception {
 
         Map<String, Object> request = Map.of(
                 "model", "gpt-4o-mini",
-                "input", prompt
+                "messages", java.util.List.of(
+                        Map.of("role", "user", "content", prompt)
+                )
         );
 
-        var responseEntity = restClient
+
+        // ⭐ De ruwe JSON ophalen als string
+        String json = restClient
                 .post()
-                .uri("/responses")
+                .uri("/chat/completions")
                 .body(request)
                 .retrieve()
-                .toEntity(String.class);
-
-        String json = responseEntity.getBody();
-
-        System.out.println("JSON length: " + json.length());
-        System.out.println(json.substring(0, Math.min(500, json.length())));
+                .onStatus(
+                        status -> status.isError(),
+                        (req, res) -> {
+                            System.out.println("HTTP STATUS: " + res.getStatusCode());
+                            System.out.println(new String(res.getBody().readAllBytes()));
+                        }
+                )
+                .body(String.class);
 
         Path path = Path.of("src/test/resources/canned/" + filename);
         Files.createDirectories(path.getParent());
@@ -83,6 +86,7 @@ public class CannedResponseGenerator {
                 "Hoe zorgt legalfly ervoor dat de informatie die verstuurd wordt niet wordt gebruikt en opgeslagen door AI chatbots?",
                 "raw-openai-response.json"
         );
+
 
         ctx.close();
     }

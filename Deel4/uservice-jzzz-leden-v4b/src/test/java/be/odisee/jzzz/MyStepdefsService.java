@@ -7,10 +7,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class MyStepdefsService {
 
@@ -25,7 +27,6 @@ public class MyStepdefsService {
 
     @Given("there are no requests")
     public void thereAreNoRequests() {
-        // Crucial fix: Clean the database before every scenario
         requestRepository.deleteAll();
     }
 

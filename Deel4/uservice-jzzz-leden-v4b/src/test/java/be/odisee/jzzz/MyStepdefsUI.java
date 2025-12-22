@@ -18,7 +18,6 @@ public class MyStepdefsUI {
     String beschrijving = "beschrijving om te testen";
     String emailKlant = "test.email@gmail.com";
 
-    //
     @Before("@UI")
     public void before() {
     driver = new ChromeDriver();
@@ -32,7 +31,7 @@ public class MyStepdefsUI {
 
     @Given("^User is on the Request page$")
     public void userIsOnTheRequestPage() {
-        driver.navigate().to("http://localhost:8081");
+        driver.navigate().to("http://localhost:8080");
         driver.findElement(By.name("RequestTab")).click();
     }
 

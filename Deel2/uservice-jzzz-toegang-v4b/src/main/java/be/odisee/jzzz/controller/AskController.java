@@ -7,7 +7,7 @@ import be.odisee.jzzz.domain.Question;
 import be.odisee.jzzz.service.aiService;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "*")
 @RestController
 public class AskController {
 

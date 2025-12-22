@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-21T13:24:16 CET" name="Surefire suite" finished-at="2025-12-21T13:24:16 CET" duration-ms="85">
+  <suite started-at="2025-12-21T21:31:37 CET" name="Surefire suite" finished-at="2025-12-21T21:31:37 CET" duration-ms="89">
     <groups>
     </groups>
-    <test started-at="2025-12-21T13:24:16 CET" name="Surefire test" finished-at="2025-12-21T13:24:16 CET" duration-ms="85">
+    <test started-at="2025-12-21T21:31:37 CET" name="Surefire test" finished-at="2025-12-21T21:31:37 CET" duration-ms="89">
       <class name="be.odisee.jzzz.JzzzLedenApplicationTests">
-        <test-method signature="contextLoads()[pri:0, instance:be.odisee.jzzz.JzzzLedenApplicationTests@2de23121]" started-at="2025-12-21T13:24:16 CET" name="contextLoads" finished-at="2025-12-21T13:24:16 CET" duration-ms="7" status="PASS">
+        <test-method signature="contextLoads()[pri:0, instance:be.odisee.jzzz.JzzzLedenApplicationTests@63475ace]" started-at="2025-12-21T21:31:37 CET" name="contextLoads" finished-at="2025-12-21T21:31:37 CET" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contextLoads -->

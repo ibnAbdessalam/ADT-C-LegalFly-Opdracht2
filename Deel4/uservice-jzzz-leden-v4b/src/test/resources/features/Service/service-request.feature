@@ -3,12 +3,12 @@ Feature: Manage Requests Service Logic
   Background:
     Given there are no requests
 
-  Scenario: Create and Read a valid request (Happy Path)
+  Scenario: Create and Read a valid request
     When I create a request with title "Contract Review"
     Then the created request should have status "PENDING"
     And the request list should contain 1 request
 
-  Scenario: Create a request without a title (Sad Path)
+  Scenario: Create a request without a title
     When I try to create a request with an empty title
     Then I should receive an error message "Request title cannot be empty"
 
