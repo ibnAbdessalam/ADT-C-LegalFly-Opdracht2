@@ -10,4 +10,6 @@ public interface aiService {
 
     ContractAnalysisResponse analyzeContract(ContractAnalysisRequest request);
 
+
+    String buildContractPromptWithRAG(String contractText, String question);
 }

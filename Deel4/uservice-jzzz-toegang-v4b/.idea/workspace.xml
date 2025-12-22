@@ -5,41 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dcae538-85c1-4fb9-8fac-478430b73f02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/pages/RequestPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/src/test/java/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel1/brainstorm2018wa2sb2025seleniumSimple/target/test-classes/be/odisee/brainstorm/acceptancetests/ResponseGenerator/CannedResponseGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Deel2/uservice-jzzz-toegang-v4b/src/main/java/be/odisee/jzzz/controller/AskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/dao/LegalContractRulesRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/domain/LegalContractRules.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/legalContractRulesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/legalContractRulesServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/ragPatternService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/ragPatternServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/java/be/odisee/jzzz/MyStepdefsUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/resources/features/Service/service-request.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/src/test/resources/features/Service/service-request.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/leden-0.0.1-SNAPSHOT-stubs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/leden-0.0.1-SNAPSHOT-stubs.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/leden-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/leden-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/leden-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/leden-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/GetStatusContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/GetStatusContract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/POSTnieuwRequestContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/stubs/META-INF/be.odisee.jzzz/leden/0.0.1-SNAPSHOT/mappings/POSTnieuwRequestContract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/junitreports/TEST-be.odisee.jzzz.JzzzLedenApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/junitreports/TEST-be.odisee.jzzz.JzzzLedenApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-junit-results/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/surefire-reports/testng-native-results/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/be/odisee/jzzz/MyStepdefsUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/features/Service/service-request.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../uservice-jzzz-leden-v4b/target/test-classes/features/Service/service-request.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/AskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/controller/AskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/AskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/be/odisee/jzzz/controller/AskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/aiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/aiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/aiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/odisee/jzzz/service/aiServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -115,7 +91,7 @@
       <workItem from="1764328152026" duration="562000" />
       <workItem from="1765288643105" duration="24000" />
       <workItem from="1766322723610" duration="498000" />
-      <workItem from="1766402408216" duration="508000" />
+      <workItem from="1766402408216" duration="5574000" />
     </task>
     <servers />
   </component>

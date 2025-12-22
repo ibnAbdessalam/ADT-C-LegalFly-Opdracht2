@@ -1,9 +1,6 @@
 package be.odisee.jzzz.service;
 
-import be.odisee.jzzz.domain.Answer;
-import be.odisee.jzzz.domain.ContractAnalysisRequest;
-import be.odisee.jzzz.domain.ContractAnalysisResponse;
-import be.odisee.jzzz.domain.Question;
+import be.odisee.jzzz.domain.*;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.ai.chat.client.ChatClient;
@@ -18,11 +15,14 @@ public class aiServiceImpl implements aiService {
 
     private final ChatClient chatClient;
     private final ObjectMapper objectMapper;
+    private final legalContractRulesServiceImpl _legalContractRulesService;
 
-    public aiServiceImpl(ChatClient.Builder chatClientBuilder) {
+    public aiServiceImpl(ChatClient.Builder chatClientBuilder, legalContractRulesServiceImpl _legalContractRulesService) {
         this.chatClient = chatClientBuilder.build();
         this.objectMapper = new ObjectMapper();
+        this._legalContractRulesService = _legalContractRulesService;
     }
+
 
     @Override
     public Answer askQuestion(Question question) {
@@ -35,7 +35,7 @@ public class aiServiceImpl implements aiService {
 
     @Override
     public ContractAnalysisResponse analyzeContract(ContractAnalysisRequest request) {
-        String prompt = buildContractPrompt(request.contractText(), request.question());
+        String prompt = buildContractPromptWithRAG(request.contractText(), request.question());
 
         var response = chatClient.prompt()
                 .user(prompt)
@@ -45,6 +45,44 @@ public class aiServiceImpl implements aiService {
         return parseContractResponse(response);
     }
 
+
+    public String buildContractPromptWithRAG(String contractText, String question) {
+        List<LegalContractRules> legalContractRules = _legalContractRulesService.getAllLegalContractRule();
+        List<LegalContractRules> selectedLegalContractRules = _legalContractRulesService.selectRelevantRulesByTitle(contractText, legalContractRules);
+
+
+        StringBuilder prompt = new StringBuilder();
+        prompt.append("You are a legal expert analyzing contracts for LegalFly, a Belgian legal services platform.\n\n");
+        prompt.append("CONTRACT TEXT:\n");
+        prompt.append(contractText);
+
+        prompt.append("These are some important rules you can use while verifyn the contract.");
+        for (LegalContractRules rule : selectedLegalContractRules) {
+            prompt.append("- ").append(rule.getTitle()).append(": ").append(rule.getDescription()).append("\n");
+        }
+        if (question != null && !question.isEmpty()) {
+            prompt.append("SPECIFIC QUESTION:\n");
+            prompt.append(question);
+            prompt.append("\n\n");
+        }
+
+        prompt.append("Please provide a detailed analysis including:\n");
+        prompt.append("1. A brief summary of the contract (2-3 sentences)\n");
+        prompt.append("2. Key risks or concerns (list 3-5 specific items)\n");
+        prompt.append("3. Your professional recommendation\n\n");
+        prompt.append("IMPORTANT: Format your response as JSON with the following structure:\n");
+        prompt.append("{\n");
+        prompt.append("  \"summary\": \"...\",\n");
+        prompt.append("  \"risks\": [\"risk 1\", \"risk 2\", \"risk 3\"],\n");
+        prompt.append("  \"recommendation\": \"...\"\n");
+        prompt.append("}");
+
+        return prompt.toString();
+
+    }
+
+
+    // oude versie, zonder RAG, niet meer gebruikt
     private String buildContractPrompt(String contractText, String question) {
         StringBuilder prompt = new StringBuilder();
         prompt.append("You are a legal expert analyzing contracts for LegalFly, a Belgian legal services platform.\n\n");
